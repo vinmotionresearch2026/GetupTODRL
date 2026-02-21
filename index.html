@@ -229,7 +229,7 @@
             <div class="column is-full">
               <!-- <h3 class="subtitle is-5">Face Up — Self Standing Up</h3> -->
               <h3 class="subtitle is-5">Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial supine pose</h3>
-              <video id="sim_face_up" muted loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
+              <video id="sim_face_up" muted autoplay loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
                 <source src="./videos/faceup_comparison.mp4" type="video/mp4">
                 Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial supine pose.
               </video>
@@ -237,7 +237,7 @@
             <div class="column is-full">
               <!-- <h3 class="subtitle is-5">Face Down — Self Standing Up</h3> -->
               <h3 class="subtitle is-5">Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial prone pose</h3>
-              <video id="sim_face_down" muted loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
+              <video id="sim_face_down" muted autoplay loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
                 <source src="./videos/facedown_comparison.mp4" type="video/mp4">
                 Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial prone pose.
               </video>
@@ -258,7 +258,7 @@
       <div class="grid-demos">
         <!-- Row 1 -->
         <div class="video-item">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/supinePose.mp4" type="video/mp4">
           </video>
           <div class="caption">Supine Pose</div>
@@ -266,7 +266,7 @@
 
         <!-- Row 2 -->
         <div class="video-item">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/pronePose.mp4" type="video/mp4">
           </video>
           <div class="caption">Prone Pose</div>
@@ -277,29 +277,29 @@
 
       <!-- Robustness Demos-->
       <h3 class="title is-3" style="margin-top: 4rem;">Robustness to Perturbation</h3>
-      <div class="grid-robustness">
-        <div class="video-item">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+      <div class="columns is-multiline">
+        <div class="column is-half">
+          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/facedown_ball.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video-item">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+        <div class="column is-half">
+          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/facedown_softTerrain.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video-item">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+        <div class="column is-half">
+          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/faceup_sand.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video-item">
+        <div class="column is-half">
           <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/faceup_BallAndSoftTerrain.mp4" type="video/mp4">
           </video>
         </div>
-        <div class="video-item">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+        <div class="column is-half">
+          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/faceup_MixedTerrain.mp4" type="video/mp4">
           </video>
         </div>
@@ -312,7 +312,7 @@
     <div class="container">
         <br>
         <h2 class="title is-3">BibTeX</h2>
-        <pre><code>@article{huang2025vtrefine,
+        <pre><code>@article{,
     title={Optimal and Robust Getting-up Maneuvers for VinMotion Full-sized Humanoid
     Robots with Trajectory Optimization and Deep Reinforcement Learning},
     author={Chuong Nguyen, Huy Dao, Loc Pham, Truong Nguyen, and Quan Nguyen},
