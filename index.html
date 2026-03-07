@@ -62,23 +62,24 @@
         <div class="columns is-centered">
           <div class="column has-text-centered">
               <h1 class="title is-2 publication-title" style="background: linear-gradient(90deg, #46b1f0 0%, #9b59b6 100%); -webkit-background-clip: text; -webkit-text-fill-color: transparent; background-clip: text;">
-                Optimal and Robust Getting-up Maneuvers for VinMotion Full-sized Humanoid </br>
-                Robots with Trajectory Optimization and Deep Reinforcement Learning
+                Optimized and Robust Martial-Arts-Inspired Standing-Up Maneuvers </br>
+                for Full-Sized Humanoid Robots
               </h1>
             <div class="is-size-5 publication-authors">
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=eF7sD5IAAAAJ&hl=en">Chuong Nguyen</a><sup>1,2*</sup>,</span>
+                <a href="https://scholar.google.com/citations?user=eF7sD5IAAAAJ&hl=en">Chuong Nguyen</a><sup>1,3*</sup>,</span>
               <span class="author-block">
                 <a href="https://huy-quang-dao.github.io/">Quang Huy Dao</a><sup>1*</sup>,</span>
               <span class="author-block">
                 <a href="https://github.com/leopt4">Thanh Loc Pham </a><sup>1*</sup></span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=hZGzoFwAAAAJ&hl=en">Van Truong Nguyen </a><sup>1</sup></span>
+                <a href="https://scholar.google.com/citations?user=hZGzoFwAAAAJ&hl=en">Van Truong Nguyen </a><sup>1,2</sup></span>
               <span class="author-block">
-                <a href="https://scholar.google.com/citations?user=s5_69i0AAAAJ&hl=en">Quan Nguyen </a><sup>1,2</sup></span>
+                <a href="https://scholar.google.com/citations?user=s5_69i0AAAAJ&hl=en">Quan Nguyen </a><sup>1,3</sup></span>
                 <h3 style="text-align: center;font-size: 80%; color: #2d2e2e"> 
                   <sup>1</sup> Vinmotion
-                  <sup>2</sup> USC
+                  <sup>2</sup> VinUniversity
+                  <sup>3</sup> USC
                   <br>
                   <sup>*</sup> Equal contribution &nbsp;&nbsp; <sup>**</sup> Work Done at Vinmotion
                   <!-- <br>
@@ -87,6 +88,7 @@
             </div>
             <div class="image-container"> 
               <img style="display: inline-block; width: 30%;" src="images/Vinmotion_logo.png"/> &nbsp &nbsp &nbsp
+              <img style="display: inline-block; width: 30%;" src="images/Vinuni.png"/> &nbsp &nbsp &nbsp
               <img style="display: inline-block; width: 20%;" src="images/USC-Logo.png"/>  
           </div>
           <br>
@@ -213,7 +215,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Architecture</h2>
           <div class="content has-text-justified">
-            <img src="images/method.png" alt="" style="width: 100%;" />
+            <img src="images/Slide5.jpg" alt="" style="width: 100%;" />
           </div>
         </div>
       </div>
@@ -229,7 +231,7 @@
             <div class="column is-full">
               <!-- <h3 class="subtitle is-5">Face Up — Self Standing Up</h3> -->
               <h3 class="subtitle is-5">Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial supine pose</h3>
-              <video id="sim_face_up" muted autoplay loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
+              <video id="sim_face_up" muted autoplay controls loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
                 <source src="./videos/faceup_comparison.mp4" type="video/mp4">
                 Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial supine pose.
               </video>
@@ -237,7 +239,7 @@
             <div class="column is-full">
               <!-- <h3 class="subtitle is-5">Face Down — Self Standing Up</h3> -->
               <h3 class="subtitle is-5">Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial prone pose</h3>
-              <video id="sim_face_down" muted autoplay loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
+              <video id="sim_face_down" muted autoplay controls loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
                 <source src="./videos/facedown_comparison.mp4" type="video/mp4">
                 Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial prone pose.
               </video>
@@ -251,90 +253,112 @@
    <!-- Real Robot Experiments Section -->
   <section class="section">
     <div class="container is-max-desktop">
-      <h2 class="title is-2 has-text-centered">Real Robot Experiments</h2>
+      <h2 class="title is-2 has-text-centered">Robustness to unknown terrain</h2>
 
-      <!-- Demos -->
-      <h3 class="title is-3" style="margin-top: 4rem;"> Standing-Up Demonstration</h3>
-      <div class="grid-demos">
-        <!-- Row 1 -->
-        <div class="video-item">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/supinePose.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Supine Pose</div>
-        </div>
-
-        <!-- Row 2 -->
-        <div class="video-item">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/pronePose.mp4" type="video/mp4">
-          </video>
-          <div class="caption">Prone Pose</div>
-        </div>
-
-
-      </div>
 
       <!-- Robustness Demos/Diverse terrain-->
-      <h3 class="title is-3" style="margin-top: 4rem;">Robustness to diverse terrains</h3>
+      <h3 class="title is-3" style="margin-top: 4rem;"> Prone Tasks </h3>
       <div class="columns is-multiline">
-        <!-- <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/facedown_ball.mp4" type="video/mp4">
-          </video>
-        </div> -->
         <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/facedown_softTerrain.mp4" type="video/mp4">
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/FFRL_grass_fixcam_facedown.mp4" type="video/mp4">
           </video>
+          <div class="caption">Soft foam</div>
         </div>
-        <!-- <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/faceup_sand_update.mp4" type="video/mp4">
-          </video>
-        </div> -->
-        <!-- <div class="column is-half">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/faceup_BallAndSoftTerrain.mp4" type="video/mp4">
-          </video>
-        </div> -->
         <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/faceup_MixedTerrain.mp4" type="video/mp4">
+          <video muted loop controls playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/FFRL_ice_fixcam_facedown.mp4" type="video/mp4">
           </video>
+          <div class="caption">Icy terrain</div>
+        </div>
+        <div class="column is-half">
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/FFRL_slope_ball_fixcam_facedown_2.mp4" type="video/mp4">
+          </video>
+          <div class="caption">Sloped terrain</div>
         </div>
       </div>
 
       <!-- Robustness Demos/External Disturbance-->
-      <h3 class="title is-3" style="margin-top: 4rem;">Robustness to external disturbances</h3>
+      <h3 class="title is-3" style="margin-top: 4rem;"> Supine Tasks </h3>
       <div class="columns is-multiline">
         <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/facedown_ball.mp4" type="video/mp4">
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/FFRL_grass_fixcam_faceup.mp4" type="video/mp4">
           </video>
-        </div>
-        <!-- <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/facedown_softTerrain.mp4" type="video/mp4">
-          </video>
-        </div> -->
-        <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/faceup_sand_update.mp4" type="video/mp4">
-          </video>
+          <div class="caption">Soft foam</div>
         </div>
         <div class="column is-half">
-          <video muted loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/faceup_BallAndSoftTerrain.mp4" type="video/mp4">
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/FFRL_ice_fixcam_faceup.mp4" type="video/mp4">
           </video>
+          <div class="caption">Icy terrain</div>
         </div>
-        <!-- <div class="column is-half">
-          <video muted autoplay loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
-            <source src="./videos/faceup_MixedTerrain.mp4" type="video/mp4">
+        <div class="column is-half">
+          <video muted loop autoplay controls playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/FFRL_hardterrain_fixcam_faceup.mp4" type="video/mp4">
           </video>
-        </div> -->
+          <div class="caption">Random blocks</div>
+        </div>
       </div>
 
+    </div>
+  </section>
+
+
+  <section class="section">
+    <div class="container is-max-desktop">
+      <h3 class="title is-3">Fast Standup</h3>
+      <div class="columns">
+        <div class="column is-half">
+          <video
+            id="video-normal"
+            muted
+            autoplay
+            controls
+            loop
+            playsinline
+            preload="metadata"
+            style="width: 100%; border-radius: 10px;"
+          >
+            <source src="./videos/FFRLfastpose_1x.mp4" type="video/mp4">
+          </video>
+          <div class="caption" style="text-align:center; margin-top: 0.5rem;">Normal speed (1×)</div>
+        </div>
+
+        <div class="column is-half">
+          <video
+            id="video-slowmo"
+            muted
+            autoplay
+            controls
+            loop
+            playsinline
+            preload="metadata"
+            style="width: 100%; border-radius: 10px;"
+          >
+            <source src="./videos/FFRLfastpose_05x.mp4" type="video/mp4">
+          </video>
+          <div class="caption" style="text-align:center; margin-top: 0.5rem;">Slow motion (0.5×)</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+
+
+
+  <section class="overall teaser"></section>
+    <div class="columns is-centered has-text-centered">
+      <div class="container">
+        <div class="column is-full-width">
+          <h2 class="title is-3">
+            Real Robot Experiments  </h2>
+          <video id="teaser_video" width=99% muted autoplay controls loop style="border-radius:10px; ">
+            <source src="./videos/IROS_26_Fall_Recovery_ver3.0.mp4" type="video/mp4">
+          </video>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -344,8 +368,8 @@
         <br>
         <h2 class="title is-3">BibTeX</h2>
         <pre><code>@article{,
-    title={Optimal and Robust Getting-up Maneuvers for VinMotion Full-sized Humanoid
-    Robots with Trajectory Optimization and Deep Reinforcement Learning},
+    title={Optimized and Robust Martial-Arts-Inspired Standing-Up Maneuvers
+                for Full-Sized Humanoid Robots},
     author={Chuong Nguyen, Huy Dao, Loc Pham, Truong Nguyen, and Quan Nguyen},
     booktitle={},
     year={2026}
