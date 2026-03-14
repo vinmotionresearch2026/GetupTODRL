@@ -180,7 +180,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Abstract</h2>
           <div class="content has-text-justified">
-            <p>
+            <p style="font-size: 1.2rem; line-height: 1.8;">
               Getting-up control, or fall recovery, is of particular importance for humanoid robots operating in real-world
               environments. Achieving such behaviors that are simultaneously fast, optimal, and robust has been challenging tasks. In
               this paper, we propose a hierarchical framework consisting of
@@ -218,7 +218,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Architecture</h2>
           <div class="content has-text-justified">
-            <img src="images/Slide5.jpg" alt="" style="width: 100%;" />
+            <img src="images/Slide6.jpg" alt="" style="width: 100%;" />
           </div>
         </div>
       </div>
@@ -235,7 +235,7 @@
               <!-- <h3 class="subtitle is-5">Face Up — Self Standing Up</h3> -->
               <h3 class="subtitle is-5">Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial supine pose</h3>
               <video id="sim_face_up" muted autoplay controls loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
-                <source src="./videos/faceup_comparison.mp4" type="video/mp4">
+                <source src="./videos/faceup_comparison_fix.mp4" type="video/mp4">
                 Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial supine pose.
               </video>
             </div>
@@ -243,7 +243,7 @@
               <!-- <h3 class="subtitle is-5">Face Down — Self Standing Up</h3> -->
               <h3 class="subtitle is-5">Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial prone pose</h3>
               <video id="sim_face_down" muted autoplay controls loop playsinline preload="metadata" style="width:100%; border-radius:10px;">
-                <source src="./videos/facedown_comparison.mp4" type="video/mp4">
+                <source src="./videos/facedown_comparison_fix.mp4" type="video/mp4">
                 Comparison LMPC, NMPC, and DRL (Our method) for getting up from initial prone pose.
               </video>
             </div>
@@ -258,23 +258,21 @@
     <div class="container is-max-desktop">
       <h2 class="title is-2 has-text-centered">Robustness to unknown terrain</h2>
 
-
-      <!-- Robustness Demos/Diverse terrain-->
       <h3 class="title is-3" style="margin-top: 4rem;"> Prone Tasks </h3>
-      <div class="columns is-multiline">
-        <div class="column is-half">
+      <div class="columns">
+        <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_grass_fixcam_facedown.mp4" type="video/mp4">
           </video>
           <div class="caption">Soft foam</div>
         </div>
-        <div class="column is-half">
+        <div class="column is-one-third">
           <video muted loop controls playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_ice_fixcam_facedown.mp4" type="video/mp4">
           </video>
           <div class="caption">Icy terrain</div>
         </div>
-        <div class="column is-half">
+        <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_slope_ball_fixcam_facedown_2.mp4" type="video/mp4">
           </video>
@@ -282,29 +280,27 @@
         </div>
       </div>
 
-      <!-- Robustness Demos/External Disturbance-->
       <h3 class="title is-3" style="margin-top: 4rem;"> Supine Tasks </h3>
-      <div class="columns is-multiline">
-        <div class="column is-half">
+      <div class="columns">
+        <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_grass_fixcam_faceup.mp4" type="video/mp4">
           </video>
           <div class="caption">Soft foam</div>
         </div>
-        <div class="column is-half">
+        <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_ice_fixcam_faceup.mp4" type="video/mp4">
           </video>
           <div class="caption">Icy terrain</div>
         </div>
-        <div class="column is-half">
+        <div class="column is-one-third">
           <video muted loop autoplay controls playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_hardterrain_fixcam_faceup.mp4" type="video/mp4">
           </video>
           <div class="caption">Random blocks</div>
         </div>
       </div>
-
     </div>
   </section>
 
