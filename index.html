@@ -218,7 +218,7 @@
         <div class="column is-full-width">
           <h2 class="title is-3">Architecture</h2>
           <div class="content has-text-justified">
-            <img src="images/Slide6.jpg" alt="" style="width: 100%;" />
+            <img src="images/methodNew.png" alt="" style="width: 100%;" />
           </div>
         </div>
       </div>
@@ -258,49 +258,62 @@
     <div class="container is-max-desktop">
       <h2 class="title is-2 has-text-centered">Robustness to unknown terrain</h2>
 
-      <h3 class="title is-3" style="margin-top: 4rem;"> Prone Tasks </h3>
+      <h3 class="title is-3" style="margin-top: 4rem;">Prone Tasks</h3>
       <div class="columns">
         <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_grass_fixcam_facedown.mp4" type="video/mp4">
           </video>
-          <div class="caption">Soft foam</div>
+          <div class="caption" style="font-size: 0.85rem; color: #555; margin-top: 0.5rem; min-height: 2.5em;">
+            Soft terrain with stiffness 300 and damping 20
+          </div>
         </div>
         <div class="column is-one-third">
-          <video muted loop controls playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_ice_fixcam_facedown.mp4" type="video/mp4">
           </video>
-          <div class="caption">Icy terrain</div>
+          <div class="caption" style="font-size: 0.85rem; color: #555; margin-top: 0.5rem; min-height: 2.5em;">
+            Slippery ice with a friction coefficient 0.02
+          </div>
         </div>
         <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_slope_ball_fixcam_facedown_2.mp4" type="video/mp4">
           </video>
-          <div class="caption">Sloped terrain</div>
+          <div class="caption" style="font-size: 0.85rem; color: #555; margin-top: 0.5rem; min-height: 2.5em;">
+            A sloped surface with an inclination angle of 20 degree
+          </div>
         </div>
       </div>
 
-      <h3 class="title is-3" style="margin-top: 4rem;"> Supine Tasks </h3>
+      <h3 class="title is-3" style="margin-top: 4rem;">Supine Tasks</h3>
       <div class="columns">
         <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_grass_fixcam_faceup.mp4" type="video/mp4">
           </video>
-          <div class="caption">Soft foam</div>
+          <div class="caption" style="font-size: 0.85rem; color: #555; margin-top: 0.5rem; min-height: 2.5em;">
+            Soft terrain with stiffness 300 and damping 20
+          </div>
         </div>
         <div class="column is-one-third">
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_ice_fixcam_faceup.mp4" type="video/mp4">
           </video>
-          <div class="caption">Icy terrain</div>
+          <div class="caption" style="font-size: 0.85rem; color: #555; margin-top: 0.5rem; min-height: 2.5em;">
+            Slippery ice with a friction coefficient 0.02
+          </div>
         </div>
         <div class="column is-one-third">
-          <video muted loop autoplay controls playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_hardterrain_fixcam_faceup.mp4" type="video/mp4">
           </video>
-          <div class="caption">Random blocks</div>
+          <div class="caption" style="font-size: 0.85rem; color: #555; margin-top: 0.5rem; min-height: 2.5em;">
+            Rough terrain consisting of wooden blocks with random lengths 0.1–0.3 m, random widths 0.01–0.05 m, and random heights 0.005–0.02 m
+          </div>
         </div>
       </div>
+
     </div>
   </section>
 
