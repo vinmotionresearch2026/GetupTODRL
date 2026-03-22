@@ -254,6 +254,20 @@
   </section>
 
    <!-- Real Robot Experiments Section -->
+  <style>
+    .video-title {
+      text-align: center;
+      font-weight: 600;
+      margin-bottom: 0.5rem;
+    }
+    .caption {
+      text-align: center;
+      font-size: 1rem;
+      color: #555;
+      margin-top: 0.5rem;
+    }
+  </style>
+
   <section class="section">
     <div class="container" style="max-width: 1400px; padding: 0 2rem;">
       <h2 class="title is-2 has-text-centered">Robustness to unknown terrain</h2>
@@ -261,56 +275,54 @@
       <h3 class="title is-3" style="margin-top: 4rem;">Prone Tasks</h3>
       <div class="columns">
         <div class="column is-one-third">
+          <div class="video-title">Soft foam</div>
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_grass_fixcam_facedown.mp4" type="video/mp4">
           </video>
-          <div class="caption" style="font-size: 1.25rem; color: #555; margin-top: 0.75rem; min-height: 2.5em;">
-            Soft terrain with stiffness 300 and damping 20
-          </div>
+          <div class="caption">(300, 20)</div>
         </div>
+
         <div class="column is-one-third">
+          <div class="video-title">Icy terrain</div>
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_ice_fixcam_facedown.mp4" type="video/mp4">
           </video>
-          <div class="caption" style="font-size: 1.25rem; color: #555; margin-top: 0.75rem; min-height: 2.5em;">
-            Slippery ice with a friction coefficient 0.02
-          </div>
+          <div class="caption">μ = 0.02</div>
         </div>
+
         <div class="column is-one-third">
+          <div class="video-title">Sloped terrain</div>
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_slope_ball_fixcam_facedown_2.mp4" type="video/mp4">
           </video>
-          <div class="caption" style="font-size: 1.25rem; color: #555; margin-top: 0.75rem; min-height: 2.5em;">
-            A sloped surface with an inclination angle of 20 degree
-          </div>
+          <div class="caption">20°</div>
         </div>
       </div>
 
       <h3 class="title is-3" style="margin-top: 4rem;">Supine Tasks</h3>
       <div class="columns">
         <div class="column is-one-third">
+          <div class="video-title">Soft foam</div>
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_grass_fixcam_faceup.mp4" type="video/mp4">
           </video>
-          <div class="caption" style="font-size: 1.25rem; color: #555; margin-top: 0.75rem; min-height: 2.5em;">
-            Soft terrain with stiffness 300 and damping 20
-          </div>
+          <div class="caption">(300, 20)</div>
         </div>
+
         <div class="column is-one-third">
+          <div class="video-title">Icy terrain</div>
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_ice_fixcam_faceup.mp4" type="video/mp4">
           </video>
-          <div class="caption" style="font-size: 1.25rem; color: #555; margin-top: 0.75rem; min-height: 2.5em;">
-            Slippery ice with a friction coefficient 0.02
-          </div>
+          <div class="caption">μ = 0.02</div>
         </div>
+
         <div class="column is-one-third">
+          <div class="video-title">Random blocks</div>
           <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
             <source src="./videos/FFRL_hardterrain_fixcam_faceup.mp4" type="video/mp4">
           </video>
-          <div class="caption" style="font-size: 1.25rem; color: #555; margin-top: 0.75rem; min-height: 2.5em;">
-            Rough terrain consisting of wooden blocks with random lengths 0.1–0.3 m, random widths 0.01–0.05 m, and random heights 0.005–0.02 m
-          </div>
+          <div class="caption">0.1–0.3 / 0.01–0.05 / 0.005–0.02 m</div>
         </div>
       </div>
     </div>
@@ -361,7 +373,7 @@
     </div>
   </section>
 
-  <section class="section">
+  <!-- <section class="section">
     <div class="container is-max-desktop">
       <h2 class="title is-2 has-text-centered">Hardware Experiments</h2>
       <p style="text-align: center; color: #555; margin-bottom: 3rem; font-size: 1.25rem;">
@@ -381,7 +393,66 @@
           >
             <source src="./videos/Hardware.mp4" type="video/mp4">
           </video>
-          <!-- <div class="caption" style="text-align:center; margin-top: 0.5rem;">Hardware Experiments</div> -->
+        </div>
+      </div>
+    </div>
+  </section> -->
+
+  <section class="section">
+    <div class="container" style="max-width: 1400px; padding: 0 2rem;">
+      <h2 class="title is-2 has-text-centered">Hardware Experiments</h2>
+
+      <h3 class="title is-3" style="margin-top: 4rem;">Prone Tasks</h3>
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="video-title">Hard ground</div>
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/facedown_hard_new.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="caption">(300, 20)</div> -->
+        </div>
+
+        <div class="column is-one-third">
+          <div class="video-title">Artificial turf</div>
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/facedown_softTerrain_new.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="caption">μ = 0.02</div> -->
+        </div>
+
+        <div class="column is-one-third">
+          <div class="video-title">Hard ground + External disturbance</div>
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/facedown_ball_new.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="caption">20°</div> -->
+        </div>
+      </div>
+
+      <h3 class="title is-3" style="margin-top: 4rem;">Supine Tasks</h3>
+      <div class="columns">
+        <div class="column is-one-third">
+          <div class="video-title">Artificial turf + pebbles</div>
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/faceup_MixedTerrain_new.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="caption">(300, 20)</div> -->
+        </div>
+
+        <div class="column is-one-third">
+          <div class="video-title">Unanchored artificial turf + pebbles</div>
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/faceup_grassball_new.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="caption">μ = 0.02</div> -->
+        </div>
+
+        <div class="column is-one-third">
+          <div class="video-title">Hard ground</div>
+          <video muted autoplay controls loop playsinline preload="metadata" style="width: 100%; border-radius: 10px;">
+            <source src="./videos/faceup_hardterrain.mp4" type="video/mp4">
+          </video>
+          <!-- <div class="caption">0.1–0.3 / 0.01–0.05 / 0.005–0.02 m</div> -->
         </div>
       </div>
     </div>
